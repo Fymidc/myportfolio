@@ -1,0 +1,593 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    background: rgb(0, 0, 0);
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* OPENİNG PPAGE ANİMATİON */
+
+.opening-animation{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    z-index: 2;
+    opacity: 1;
+    animation: slideInFromDown 2s ease 2.6s forwards;
+    overflow: hidden;
+}
+
+#percentage{
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    font-size: 250px;
+    transform: translateX(-50%) translateY(-50%);
+    color:white;
+    z-index: 2;
+    background-color: transparent;
+}
+
+#countnum{
+    position: absolute;
+    top: 50%;
+    left: 58%;
+    font-size: 250px;
+    transform: translateX(-50%) translateY(-50%);
+    color:white;
+    z-index: 2;
+    background-color: transparent;
+
+}
+
+.katman{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    bottom: 0;
+    opacity: 0.5;
+    animation: slideInFromDownn 3s ease  forwards;
+
+}
+
+@keyframes slideInFromDownn {
+    0% {
+      transform: translateY(100%);
+    }
+    .1%{
+        opacity: 1;
+    }
+
+
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+      
+    }
+  }
+
+
+
+@keyframes slideInFromDown {
+    0% {
+      transform: translateY(0%);
+    }
+    .1%{
+        opacity: 1;
+    }
+
+
+    100% {
+      transform: translateY(-100%);
+      opacity: 0;
+      
+    }
+  }
+
+
+
+
+
+/* LANDİNG PAGE  */
+
+.bgimage{
+    width: 90%;
+    top: 50%;
+    left: 55%;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    z-index: -1;
+    
+    opacity: 0.1;
+}
+
+.landing-page{
+    width: 100%;
+    height: 100%;
+
+}
+
+.nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 45px;
+}
+
+.nav-bar h1{
+    margin-left: 70px;
+    margin-top: -20px;
+    font-family: 'Ballet', cursive;
+    
+}
+
+.nav-bar b{
+    cursor: pointer;
+    
+}
+
+.landing-page-info{
+    width: 50%;
+    padding: 50px;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    cursor: default;
+    z-index: -1;
+    background-color: transparent;
+}
+
+.landing-page-info h1,p{
+    margin-bottom: 50px;
+}
+
+.landing-page-info p{
+    width: 50%;
+    line-height: 30px;
+}
+
+#landingh1 span{
+    opacity: 0;
+    
+}
+
+
+#landingh1 span.fade{
+    opacity: 1;
+    transition: opacity 0.2s 3.5s ease-in;
+}
+
+
+#landingp span{
+    opacity: 0;
+}
+
+#landingp span.fade2{
+    opacity: 1;
+    transition: opacity 0.2s 3.5s ease-in;
+}
+
+
+.landing-page-buttons{
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.landing-page-buttons button{
+    background: black;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 18%;
+    color: white;
+    padding: 15px;
+    outline: none;
+}
+.landing-page-buttons button:hover{
+    background: rgb(24, 24, 24)
+}
+
+/*ABOUT ME SECTİON*/
+
+.about-me-section{
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    bottom: 0;
+    overflow: hidden;
+    transition: height 1s ease;
+}
+
+
+
+.about-me-section.about-slide{
+    height: 100%;
+    transition: height 1s ease;
+}
+
+#aboutClose{
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+.about-me-info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color:transparent;
+    
+}
+
+.about-me-info p {
+    line-height: 35px;
+    font-size: 22px;
+    background-color :transparent;
+    
+}
+
+.about-sec-btn{
+    position: absolute;
+    width: 100%;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skilbtn{
+    padding: 12px;
+    width: 15%;
+    cursor: pointer;
+    outline: none;
+}
+#skilbtn:hover{
+    background: rgb(27, 27, 27);
+}
+/*height 70*/
+.skil-section{
+    width: 60%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+    
+}
+
+.skil-section.skilbtnslide{
+    transition: transform 1.5s ease-in-out;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.skil-list ul li{
+    list-style: none;
+    padding: 23px;
+    width: 100%;
+    height: 64px;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+
+.skil-list {
+    width: 30%;
+}
+
+.skil-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.skil-bars{
+    
+    width:70%;
+    height: 100%;
+    
+}
+
+.bars{
+    border: 1px solid rgba(226, 216, 198, 0.623);
+    background-color: rgb(32, 32, 32);
+    width:100%;
+    height: 64px;
+}
+/* bars animation */
+
+#bars1{
+    width: 0%;
+    height: 64px;
+    
+    background: rgb(99, 99, 99);
+}
+
+#bars1.barslide{
+    
+    width:80%;
+    transition: width 1.5s ease-in;
+}
+
+#bars2{
+    width: 0%;
+    height: 64px;
+    background: rgb(99, 99, 99);
+    
+}
+
+#bars2.barslide{
+    
+    width:75%;
+    transition: width 1.5s ease-in;
+}
+
+#bars3{
+    width: 0%;
+    height: 64px;
+    background: rgb(99, 99, 99);
+    
+}
+#bars3.barslide{
+    
+    width:67%;
+    transition: width 1.5s ease-in;
+}
+
+#bars4{
+    width: 0%;
+    height: 64px;
+    background: rgb(99, 99, 99);
+    
+}
+#bars4.barslide{
+    
+    width:70%;
+    transition: width 1.5s ease-in;
+}
+
+#bars5{
+    width: 0%;
+    height: 64px;
+    background: rgb(99, 99, 99);
+    
+}
+#bars5.barslide{
+    
+    width:51%;
+    transition: width 1.5s ease-in;
+}
+
+#bars6{
+    width: 0%;
+    height: 64px;
+    background: rgb(99, 99, 99);
+    
+}
+#bars6.barslide{
+    
+    width:41%;
+    transition: width 1.5s ease-in;
+}
+
+#bars7{
+    width: 0%;
+    height: 64px;
+    background: rgb(99, 99, 99);
+    
+}
+#bars7.barslide{
+    
+    width:30%;
+    transition: width 1.5s ease-in;
+}
+
+
+/*PORTFOLİO PAGE*/
+
+.portfolio-page{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    background-color: rgb(14, 14, 14);;
+}
+
+.portfolio-content{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    
+    background-color: transparent;
+    align-items: center;
+}
+
+.port{
+    display: block;
+    width: 100%;
+    justify-content: space-around;
+    background-color: transparent;
+    padding: 20px;
+    
+}
+
+.port p{
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+    background-color: transparent;
+}
+.port button{
+    padding: 12px;
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.port button:hover{
+    background-color: rgb(29, 29, 29);
+}
+.port img{
+    width: 100%;
+    border-radius: 35px 0px 35px 0px;
+}
+
+
+/*CONTACT PAGE*/
+
+
+.contact-page{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 200%;
+    background-color: rgb(14, 14, 14);
+}
+
+.contact-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: rgb(32, 32, 32);
+    width: 50%;
+    height: 80%;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.contact-form form{
+    padding: 15px;
+    background-color: rgb(32, 32, 32);
+}
+
+#formbutton{
+    margin-top:40px;
+    padding: 15px;
+    cursor: pointer;
+    background-color: rgb(14, 14, 14);
+    
+    border: none;
+}
+
+#formbutton:hover{
+    background-color: rgb(20, 20, 20);
+}
+
+
+#msginput{
+    padding: 10px 0 115px 10px;
+    font-size: 16px;
+}
+
+.contact-form label,input{
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+    background-color: rgb(32, 32, 32);
+
+}
+
+.contact-form input{
+    outline: none;
+    background-color: rgb(51, 51, 51);
+    border: none;
+    border-radius: 20px;
+    
+}
+
+@media only screen and (max-width: 500px) {
+    #percentage {
+        font-size: 200px;
+        top: 30%;
+        display: none;
+    }
+    #countnum{
+        font-size: 200px;
+        top: 60%;
+        left: 50%;
+    }
+
+    .bgimage{
+        top: 65%;
+        width: 80%;
+    }
+    .landing-page-info{
+        width: 65%;
+        left: 3%;
+        top: 50%;
+    }
+    .landing-page-info p{
+        width: 100%;
+    }
+    .landing-page-buttons{
+        padding: 20px;
+    }
+    .landing-page-buttons button{
+        width: 25%;
+        padding: 10px;
+    }
+    .contact-form{
+        width: 75%;
+    }
+    
+    .about-me-info{
+        width: 75%;
+    }
+    .skil-section{
+        width: 75%;
+        height: 65%;
+        top: 40%;
+    }
+    .skil-list ul li{
+        padding: 22.5px;
+        font-size: 15px;
+        
+        height: 64.2px;
+    }
+    .portfolio-content{
+        width: 100%;
+        display: block;        
+    }
+
+    .port p{
+        width: 20%;
+    }
+    .port{
+        width: 100%;
+        display: flex;
+        padding: 15px;
+        height: 200px;
+        
+    }
+    .port img{
+        width: 50%;
+    }
+    .port button{
+        width: 20%;
+        height: 40px;
+        padding: 5px;
+        margin: 0%;
+        margin-top: 20%;
+        
+        
+    }
+
+  }
+

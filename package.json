@@ -1,0 +1,20 @@
+{
+  "name": "nodeapps",
+  "version": "1.0.0",
+  "description": "form mail handler",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fatih",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "heroku": "^7.49.1",
+    "nodemailer": "^6.4.17",
+    "nodemon": "^2.0.7",
+    "xoauth2": "^1.2.0"
+  }
+}

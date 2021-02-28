@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fatihBodur.co</title>
+    <link rel="stylesheet" type="text/css" href="public/css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ballet&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <div class="opening-animation">
+        <h1 id="percentage" >%</h1>
+        <h1 id="countnum" >0</h1>
+        <div class="katman"></div>
+    </div>
+    
+   
+
+
+    <div class="landing-page">
+
+        <img class="bgimage" src="/public/DEVELOPER (1).svg" alt="bground">
+
+        <div class="nav-bar">
+            <h1>fth</h1>
+            <b id="aboutme" >About Me</b>
+        </div>
+
+        <div class="landing-page-info">
+            
+            <p id="landingp" >Hi,I'm Fatih. I'm a front-end 
+                web developer and trying to learn back-end.
+            </p>
+        </div>
+        
+        <div class="landing-page-buttons">
+            <button id="portfoliobtn" >Portfolio</button>
+            <button id="contactbtn" >Contact Me</button>
+        </div>
+
+        <div class="about-me-section">
+            <img class="bgimage" src="/public/DEVELOPER (1).svg" alt="bground">
+
+            <i  id="aboutClose" class="fa fa-times" aria-hidden="true"></i>
+
+            <div class="about-me-info">
+                <p>Hi,I'm Fatih. I'm a self-taught front-end 
+                    web developer and trying to learn back-end.I'm passionate to create 
+                    great things to make life easy.</br>
+                My journey started with python,which is easy to grasp what's the proggramming look like then I got 
+            education generally which involves data-structure and algorithms.</br>
+        
+        So I'm building modern,responsive high-performance end-to-end websites and web applications for 1 year.
+    I'd like to get more experience and make my skills sharpened.
+        I'd like to hear from you. Reach me in the contact section. Thank you.</p>
+            </div>
+            <div class="about-sec-btn">
+                <button id="skilbtn" >Skils</button>
+            </div>
+            
+
+
+            <div class="skil-section">
+
+                <div class="skil-content">
+
+                
+                    <div class="skil-list">
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS 3</li>
+                            <li>JAVASCRİPT</li>
+                            <li>JQUERY</li>
+                            <li>REACT JS</li>
+                            <li>NODE JS</li>
+                            <li>PYTHON</li>
+                        </ul>
+                    </div>
+
+                    <div class="skil-bars">
+                        <div class="bars"><div id="bars1"></div></div>
+                        <div class="bars"><div id="bars2"></div></div>
+                        <div class="bars"><div id="bars3"></div></div>
+                        <div class="bars"><div id="bars4"></div></div>
+                        <div class="bars"><div id="bars5"></div></div>
+                        <div class="bars"><div id="bars6"></div></div>
+                        <div class="bars"><div id="bars7"></div></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="portfolio-page">
+        
+        <div class="portfolio-content">
+            <div class="port">
+                <img src="/public/art.website.jpg" alt="">
+                <p>HTML5,CSS3,Javascript-Jquery</br>-------  </p>
+                <button onclick="location.href='http://myart.surge.sh/'" type="button" target="_blank"  >Live Site</button>
+            </div>
+            <div class="port">
+                <img src="/public/apple.website.jpg" alt="">
+                <p>HTML5,CSS3,Javascript-Jquery</br>--Not Responsive-- </p>
+                <button onclick="location.href='http://aple.surge.sh/'" type="button" target="_blank"  >Live Site</button>
+            </div>
+            <div class="port">
+                <img src="/public/bookapp.jpg" alt="">
+                <p>ReactJS </br>Better experiment login with 
+                    name- test1 
+                     password-test1test1</p>
+                
+                <button onclick="location.href='http://mybook.surge.sh/'" type="button" target="_blank"  >Live Site</button>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="contact-page">
+        
+
+        <div class="contact-form">
+            <form action="send" method="POST">
+                <label for="name">Name*</label>
+                <input type="text" name="name" required >
+                <label for="email">E-mail*</label>
+                <input type="email" name="email" required >
+                <label for="msg">Message*</label>
+                <input id="msginput" type="text" name="msg" required >
+                <input id="formbutton" type="submit" name="submit" value="Send" >
+            </form>
+        </div>
+
+    </div>
+    
+
+    <script src="/public/index.js"></script>
+
+</body>
+</html>
