@@ -3,8 +3,9 @@ const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 const nodemailer = require('nodemailer');
 const path = require('path');
+//const cors = require("cors");
 
-const port = process.env.Port || 3000
+const port = process.env.Port || 3000;
 const app = express();
 
 //view engine
@@ -30,7 +31,7 @@ app.use('/public',express.static(path.join(__dirname,'public')));
 
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
-
+//app.use(cors({origin: new URL('http://localhost:3000'), credentials: true}))
 
 app.get('/',(req,res)=>{
     res.statusCode = 200;
